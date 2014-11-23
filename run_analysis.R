@@ -23,19 +23,10 @@ fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%2
 HAR_dataset_zip <- download.file(fileUrl,destfile="HAR_dataset.zip")
 # Unzips the UCI HAR dataset
 unzip("HAR_dataset.zip")
+
 #***********************************
 # Read featutres.txt file 
 #***********************************
-
-# Step 1 :  Clean up the Column names to prepare for Combination with Data:
-
-#The features.txt file contains the column headers/names for the X_[test|train].txt file,
-#but the column names are listed down the rows. Once we load this file in, we can pass the second column of this data frame 
-#to the col.names parameter of read.table when we read in the X_[test|train].txt sets. Before we can do this, however, we 
-#need to substitue potentially problematic characters in the column names to ease future programmatic utility as well as 
-#enhance human readability. A "t" character at the beginning of a variable name represents "time", according to
-#the features_info.txt file, so we will replace that with "time_". An "f" character at the beginning of a var name indicates
-#"frequency", so we will replace the beginning "f" with "frequency_".
 #-------------------------------------------------------------------------------------------------------------------
 features<-read.table("features.txt",header=F) # Imports features.txt file from UCI HAR dataset
 str(features) # Displays the internal structure of the dataset features.txt
