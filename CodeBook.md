@@ -1,3 +1,32 @@
+#Experimental Study Design
+Original data source: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+Below is taken straight from the README in the raw data's source.
+
+Human Activity Recognition Using Smartphones Dataset Version 1.0
+
+Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto. Smartlab - Non Linear Complex Systems Laboratory DITEN - Universit‡ degli Studi di Genova. Via Opera Pia 11A, I-16145, Genoa, Italy. activityrecognition@smartlab.ws www.smartlab.ws
+
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.
+
+The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details.
+#Tidy Data
+Contains aggregated mean values of all mean and standard deviation values from original data set grouped by activity and subject, resulting in a total of 180 records.
+#Attribute Information:
+For each record in the tidy data it is provided:
+* Its activity label (one out of 6 different activities):
+ * LAYING
+ * SITTING
+ * STANDING
+ * WALKING
+ * WALKING_DOWNSTAIR
+ * WALKING_UPSTAIRS
+* An identifier of the subject who carried out the experiment (30 different subjects, IDs ranging from {1,2,3,...,30})
+* 79 features with the
+ * Mean of Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
+ * Mean of Triaxial Angular velocity from the gyroscope.
+ * numerical value ranging in [-1,1]
+
+
 #Code Book for tidy.csv
 * **time_** indicates time domain variables
 * **frequency_** indicates frequency domain variables
@@ -80,7 +109,13 @@
 72. frequency_BodyGyro_meanFreq_Y - numeric - units are radians/second -- ex: -0.45345956
 73. frequency_BodyGyro_meanFreq_Z - numeric - units are radians/second -- ex: -0.45345956
 74. frequency_BodyAccMag_mean - numeric - standard gravity units 'g' -- ex: -0.45345956
-
+75. frequency_BodyAccMag_meanFreq - numeric - standard gravity units 'g' -- ex: -0.45345956
+76. frequency_BodyBodyAccJerkMag_mean - numeric - standard gravity units 'g' -- ex: -0.45345956
+77. frequency_BodyBodyAccJerkMag_meanFreq - numeric - standard gravity units 'g' -- ex: -0.45345956
+78. frequency_BodyBodyGyroMag_mean - numeric - units are radians/second -- ex: -0.45345956
+79. frequency_BodyBodyGyroMag_meanFreq - numeric - units are radians/second -- ex: -0.45345956
+80. frequency_BodyBodyGyroJerkMag_mean - numeric - units are radians/second -- ex: -0.45345956
+81. frequency_BodyBodyGyroJerkMag_meanFreq - numeric - units are radians/second -- ex: -0.45345956
 
 
 
