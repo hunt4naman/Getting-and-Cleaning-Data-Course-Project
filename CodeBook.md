@@ -66,6 +66,20 @@
 58. frequency_BodyAcc_mean_Z - numeric - standard gravity units 'g' -- ex: -0.45345956
 59. frequency_BodyAcc_meanFreq_X - numeric - standard gravity units 'g' -- ex: -0.45345956
 60. frequency_BodyAcc_meanFreq_Y - numeric - standard gravity units 'g' -- ex: -0.45345956
+61. frequency_BodyAcc_meanFreq_Z - numeric - standard gravity units 'g' -- ex: -0.45345956
+62. frequency_BodyAccJerk_mean_X - numeric - standard gravity units 'g' -- ex: -0.45345956
+63. frequency_BodyAccJerk_mean_Y - numeric - standard gravity units 'g' -- ex: -0.45345956
+64. frequency_BodyAccJerk_mean_Z - numeric - standard gravity units 'g' -- ex: -0.45345956
+65. frequency_BodyAccJerk_meanFreq_X - numeric - standard gravity units 'g' -- ex: -0.45345956
+66. frequency_BodyAccJerk_meanFreq_Y - numeric - standard gravity units 'g' -- ex: -0.45345956
+67. frequency_BodyAccJerk_meanFreq_Z - numeric - standard gravity units 'g' -- ex: -0.45345956
+68. frequency_BodyGyro_mean_X - numeric - units are radians/second -- ex: -0.45345956
+69. frequency_BodyGyro_mean_Y - numeric - units are radians/second -- ex: -0.45345956
+70. frequency_BodyGyro_mean_Z - numeric - units are radians/second -- ex: -0.45345956
+71. frequency_BodyGyro_meanFreq_X - numeric - units are radians/second -- ex: -0.45345956
+72. frequency_BodyGyro_meanFreq_Y - numeric - units are radians/second -- ex: -0.45345956
+73. frequency_BodyGyro_meanFreq_Z - numeric - units are radians/second -- ex: -0.45345956
+74. frequency_BodyAccMag_mean - numeric - standard gravity units 'g' -- ex: -0.45345956
 
 
 
