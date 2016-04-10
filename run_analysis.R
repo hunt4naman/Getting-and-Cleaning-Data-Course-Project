@@ -2,7 +2,7 @@
 
 ## Coursera: Getting and Cleaning Data Course Project
 ## Naman Jain
-## 2014-11-21
+## 2016-04-10
 
 # File Description:- run_analysis.R 
 
